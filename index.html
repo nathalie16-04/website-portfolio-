@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathalie's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="navbar">
+            <h1 id="name">Nathalie Atoui</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="intro">
+        <h2 class="typewriter">Hi! I'm Nathalie, a Global Designer. Welcome to my portfolio!</h2>
+      </section> 
+
+      <script>
+        window.onload = function() {
+            document.querySelector('.typewriter').style.animationPlayState = 'running';
+        };
+        const speed = 100; 
+        let index = 0;
+    </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const text = "Hi! I'm Nathalie, a Global Designer. Welcome to my portfolio!";
+        const speed = 150; 
+        const delayAfterFinish = 2000; 
+        let index = 0;
+        let typingElement = document.getElementById("typewriter");
+
+        function typeText() {
+            if (index < text.length) {
+                typingElement.innerHTML = text.substring(0, index + 1);
+                index++;
+                setTimeout(typeText, speed);
+            } else {
+                setTimeout(() => {
+                    typeText(); 
+                }, delayAfterFinish); 
+            }
+        }
+
+        typeText(); 
+    });
+</script>
+  
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="ma photo.jpg" alt="Profile Picture">
+        <p>As a passionate Global Design student, I'm focused on creating meaningful experiences that resonate with people. My journey has allowed me to gain hands-on experience across different design disciplines, nurturing both my creativity and leadership skills. I enjoy working with diverse teams, staying organized, and managing multiple tasks to deliver thoughtful and visually engaging designs. My aim is to make a lasting impact in the design world by combining my creative vision with a values-driven approach.</p>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-card">
+            <h3>Project 1</h3>
+            <p>Click below to explore more!</p>
+            <a href="project1.html" class="see-project-button">See Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Project 2</h3>
+            <p>Click below to explore more!</p>
+            <a href="project2.html" class="see-project-button">See Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Project 3</h3>
+            <p>Click below to explore more!</p>
+            <a href="project3.html" class="see-project-button">See Project</a>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="diamond-container">
+            <div class="diamond">
+                <span>Illustrator</span>
+            </div>
+            <div class="diamond">
+                <span>Photoshop</span>
+            </div>
+            <div class="diamond">
+                <span>InDesign</span>
+            </div>
+            <div class="diamond">
+                <span>Premiere</span>
+            </div>
+            <div class="diamond">
+                <span>Blender</span>
+            </div>
+            <div class="diamond">
+                <span>Canva</span>
+            </div>
+            <div class="diamond">
+                <span>Figma</span>
+            </div>
+        </div>
+    </section>
+    
+    <section id="thank-you">
+        <h2>Thank you for visiting!</h2>
+        <p>I hope you enjoyed exploring my work.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Feel Free To Contact Me!</h2>
+        <p>Email: <a href="mailto:nathalie.atoui16@gmail.com">nathalie.atoui16@gmail.com</a></p>
+        <p>Phone: <a href="tel:+351 933 135 665">+351 933 135 665</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Nathalie Atoui</p>
+    </footer>
+
+</body>
+
+</html>
